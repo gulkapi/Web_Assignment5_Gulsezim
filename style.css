@@ -1,0 +1,245 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f7fb;
+    color: #192438;
+    font: 16px/1.6 system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 880px;
+    margin: auto;
+    padding: 0 22px;
+}
+
+header {
+    background: linear-gradient(125deg, #172b5d, #354f9b);
+    color: white;
+    padding: 62px 0 48px;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+header p {
+    color: #d9e3ff;
+}
+
+.eyebrow, .tag {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.eyebrow {
+    color: #a9c8ff;
+}
+
+.student {
+    margin-top: 28px;
+    font-weight: 700;
+}
+
+.student span {
+    background: #ffffff24;
+    border-radius: 30px;
+    padding: 6px 12px;
+    margin-left: 10px;
+}
+
+main {
+    padding-top: 30px !important;
+    padding-bottom: 42px !important;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 22px;
+    border: 1px solid #e5eaf4;
+    border-radius: 17px;
+    box-shadow: 0 8px 24px #20325709;
+}
+
+.tag {
+    color: #4669c4;
+}
+
+h2 {
+    font-size: 23px;
+    margin: 9px 0 12px;
+}
+
+button {
+    background: #345bd0;
+    color: white;
+    border: 0;
+    border-radius: 9px;
+    padding: 11px 18px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #2645a7;
+}
+
+.secondary {
+    background: #eaf0ff;
+    color: #284ba3;
+}
+
+.secondary:hover {
+    background: #d7e2ff;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.result {
+    background: #f1f5fc;
+    padding: 12px 15px;
+    border-radius: 9px;
+    margin-top: 16px;
+}
+
+.demo-box {
+    background: #e7eeff;
+    padding: 22px;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.hover-box {
+    background: #e4ebff;
+    border: 2px dashed #8099d8;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin: 12px 0 24px;
+    transition: background 0.2s;
+}
+
+.hover-box.active {
+    background: #ffdb99;
+    border-color: #d99324;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: 650;
+}
+
+input {
+    padding: 12px 14px;
+    border: 1px solid #cbd5e7;
+    border-radius: 9px;
+    font: inherit;
+    max-width: 100%;
+    width: 100%;
+}
+
+input:focus {
+    outline: 2px solid #abc2ff;
+}
+
+#validationForm button {
+    margin-top: 17px;
+}
+
+#formMessage {
+    font-weight: 650;
+}
+
+.error {
+    color: #bd3434;
+}
+
+.success {
+    color: #237447;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-form input {
+    flex: 1;
+    min-width: 0;
+}
+
+.muted {
+    color: #66748b;
+    font-size: 14px;
+}
+
+.todo-list {
+    padding: 0;
+    list-style: none;
+}
+
+.todo-list li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid #e2e8f4;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin: 8px 0;
+}
+
+.todo-list li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.todo-list li.completed span {
+    text-decoration: line-through;
+    color: #8793a8;
+}
+
+.todo-list li button {
+    padding: 7px 12px;
+    background: #fce9e9;
+    color: #ad3030;
+}
+
+.todo-list li input {
+    width: 18px;
+    height: 18px;
+    accent-color: #345bd0;
+}
+
+footer {
+    text-align: center;
+    padding: 26px;
+    color: #7c879a;
+}
+
+@media (max-width: 540px) {
+    .card {
+        padding: 20px;
+    }
+
+    .todo-form {
+        flex-direction: column;
+    }
+
+    .student span {
+        display: inline-block;
+    }
+}

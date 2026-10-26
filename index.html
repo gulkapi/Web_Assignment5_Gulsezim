@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics | Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <span class="eyebrow">WEB TECHNOLOGIES · ASSIGNMENT 05</span>
+        <h1>JavaScript Interactive Lab</h1>
+        <p>DOM manipulation, events, validation, and a task manager.</p>
+        <div class="student">Gulsezim Kapizova <span>SE-2517</span></div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <span class="tag">PART 1 · BASICS</span>
+        <h2>First Script & Variables</h2>
+        <p>Open Developer Tools → Console to see the greeting, arithmetic results, and string concatenation.</p>
+        <button id="helloButton">Show greeting alert</button>
+        <div id="mathResults" class="result"></div>
+    </section>
+
+    <section class="card">
+        <span class="tag">PART 2 · DOM</span>
+        <h2>Change Paragraph Content</h2>
+        <p id="changeParagraph">This is the original paragraph.</p>
+        <button id="changeText">Change text</button>
+    </section>
+
+    <section class="card">
+        <span class="tag">PART 2 · STYLES</span>
+        <h2>Change Block Styles</h2>
+        <div id="styleBox" class="demo-box">
+            Click the buttons to change my background and font size.
+        </div>
+        <div class="actions">
+            <button id="changeColor">Change background</button>
+            <button id="changeFont" class="secondary">Increase font size</button>
+        </div>
+    </section>
+
+    <section class="card">
+        <span class="tag">PART 2 · ELEMENTS</span>
+        <h2>Create & Remove List Items</h2>
+        <ul id="itemList">
+            <li>Item 1</li>
+        </ul>
+        <div class="actions">
+            <button id="addItem">Add Item</button>
+            <button id="removeItem" class="secondary">Remove Item</button>
+        </div>
+    </section>
+
+    <section class="card">
+        <span class="tag">PART 3 · EVENTS</span>
+        <h2>Mouse Events</h2>
+        <div id="hoverBox" class="hover-box">
+            Move your mouse over this box
+        </div>
+
+        <h2>Keyboard Events</h2>
+        <label for="liveInput">Type something</label>
+        <input id="liveInput" placeholder="Your text appears below">
+        <p class="result">
+            Current value: <strong id="liveOutput">(empty)</strong>
+        </p>
+    </section>
+
+    <section class="card">
+        <span class="tag">PART 3 · OPTIONAL</span>
+        <h2>Form Validation</h2>
+        <form id="validationForm" novalidate>
+            <label for="fullName">Name</label>
+            <input id="fullName" placeholder="Full name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="name@example.com">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password">
+
+            <button type="submit">Submit form</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <section class="card todo-card">
+        <span class="tag">PART 4 · MINI PROJECT</span>
+        <h2>Interactive To-Do List</h2>
+        <p>Add tasks, mark them complete, or remove them. Tasks are stored in a JavaScript array while the page is open.</p>
+
+        <form id="todoForm" class="todo-form">
+            <input id="taskInput" placeholder="What needs to be done?" aria-label="New task">
+            <button type="submit">Add Task</button>
+        </form>
+
+        <p id="taskCount" class="muted">0 tasks</p>
+        <ul id="todoList" class="todo-list"></ul>
+    </section>
+
+</main>
+
+<footer>Assignment #5 · JavaScript Basics · Gulsezim Kapizova</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
